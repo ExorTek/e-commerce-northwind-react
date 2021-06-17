@@ -4,6 +4,8 @@ import CartSummary from "./CartSummary";
 import SignedIn from "./SignedIn";
 import SignedOut from "./SignedOut";
 import {useHistory} from "react-router";
+import {Link} from "react-router-dom";
+import {DASHBOARD} from "../constants/routes";
 
 export default function Navi() {
     const [isAuthenticated, setIsAuthenticated] = useState(true);
@@ -21,7 +23,7 @@ export default function Navi() {
     return (
         <Menu inverted fixed='top'>
             <Container>
-                <Menu.Item
+                <Menu.Item as={Link} to={DASHBOARD}
                     name='home'
                 />
                 <Menu.Item

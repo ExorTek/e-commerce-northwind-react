@@ -9,4 +9,7 @@ export default class ProductService {
     getByProductId(id) {
         return axios.get(baseApiUrl + "products/getproductdetailbyid?id=" + id)
     };
+    getProductByCategory(id){
+        return axios.get(baseApiUrl+"products/getbycategory?id=" + id)
+    }
 };
