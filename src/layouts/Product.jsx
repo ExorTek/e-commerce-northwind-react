@@ -6,15 +6,14 @@ import {addToCart} from "../store/actions/cartActions";
 import {toast} from "react-toastify";
 
 export const Product = ({
-                            product, styles, addProductCart
+                            product, styles
                         }
 ) => {
 
     const dispatch = useDispatch();
     const handleAddToCart = () => {
-        console.log(product)
         dispatch(addToCart(product));
-        toast.success(`${product.productName} added cart!`)
+        toast.success(`${product.productName} Added cart!`)
     };
     const {
         productId,

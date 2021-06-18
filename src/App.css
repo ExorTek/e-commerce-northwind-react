@@ -19,4 +19,6 @@
 .ui.button:hover {
     background-color: #028B70FF !important;
 }
-
+.dropDown:hover{
+    color: #e74c3c !important;
+}
