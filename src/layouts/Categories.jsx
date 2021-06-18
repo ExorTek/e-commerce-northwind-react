@@ -32,7 +32,8 @@ export default function Categories() {
                            onClick={() => handleChangeCategory()}>All Product</Menu.Item>
                 {
                     categories.map(categories => (
-                        <Menu.Item className={state === categories.categoryId && "currentCategory"}
+                        <Menu.Item key={categories.categoryId}
+                                   className={state && state === categories.categoryId && "currentCategory"}
                                    onClick={() => handleChangeCategory(categories.categoryId)}
                                    name={categories.categoryName}/>
                     ))

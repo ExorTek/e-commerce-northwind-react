@@ -1,14 +1,22 @@
 .App {
-  text-align: center;
+    text-align: center;
 }
-.ui.main.container{
-  margin-top: 60px;
+
+.ui.main.container {
+    margin-top: 60px;
 }
-.header{
-  white-space: nowrap;
-  overflow: hidden;
+
+.header {
+    white-space: nowrap;
+    overflow: hidden;
 }
-.currentCategory{
-  background-color: #3498db !important;
-  color: #fafafa !important;
+
+.currentCategory {
+    background-color: #6c5ce7 !important;
+    color: #fafafa !important;
 }
+
+.ui.button:hover {
+    background-color: #028B70FF !important;
+}
+

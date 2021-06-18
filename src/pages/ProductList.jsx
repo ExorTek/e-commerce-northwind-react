@@ -7,7 +7,6 @@ import {useParams} from "react-router";
 export default function ProductList() {
     const [products, setProducts] = useState([]);
     let {categoryId} = useParams();
-
     useEffect(() => {
         let productService = new ProductService();
         if (categoryId) {
@@ -26,7 +25,7 @@ export default function ProductList() {
                     {
                         products.map((product, index) => (
 
-                            <Grid.Column>
+                            <Grid.Column key={index}>
                                 {
                                     index > 2 ? (
                                         <Product product={product} key={product.id}

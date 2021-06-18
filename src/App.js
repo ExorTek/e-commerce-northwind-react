@@ -6,6 +6,8 @@ import Navi from "./layouts/Navi";
 import {useEffect} from "react";
 import {baseApiUrl} from "./services/baseApiUrl";
 import axios from "axios";
+import {ToastContainer} from "react-toastify";
+import "react-toastify/dist/ReactToastify.min.css";
 
 function App() {
     useEffect(() => {
@@ -15,7 +17,8 @@ function App() {
     }, [])
 
     return (
-        <div className="App">
+        <div className="App" >
+            <ToastContainer position="bottom-right" />
             <Navi/>
             <Container className='main'>
                 <Dashboard/>
